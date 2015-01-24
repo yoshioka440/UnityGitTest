@@ -2,10 +2,14 @@
 using System.Collections;
 
 public class Card : MonoBehaviour {
+    public int id;
 
     public string name;
     public Sprite image;
     public string description;
+    public int cost;
+
+    public GameObject main, result;
 
     public bool disabled_variable = true;
     public bool disabled {
@@ -13,13 +17,13 @@ public class Card : MonoBehaviour {
             disabled_variable = value;
             if (value)
             {
-                //   GetComponent<UnityEngine.UI.Button>().interactable = true;
+                   GetComponent<UnityEngine.UI.Button>().interactable = true;
                 GetComponent<CanvasRenderer>().SetAlpha(1f);
                 
             }
             else
             {
-                //  GetComponent<UnityEngine.UI.Button>().interactable = false;
+                  GetComponent<UnityEngine.UI.Button>().interactable = false;
                 GetComponent<CanvasRenderer>().SetAlpha(0.5f);
             }
             
@@ -52,5 +56,17 @@ public class Card : MonoBehaviour {
     public void OnClick() {
         Debug.Log(name + " Clicked");
         disabled = !disabled_variable;
+
+        GameServer.instance.tasks[id] = true;
+        GameServer.instance.remainingTurn -= cost;
+
+        var nav = GetComponent<NavButton>();
+
+        if (main == null) Debug.LogError("Invalid name");
+        if (result == null) Debug.LogError("Invalid name");
+
+        if (GameServer.instance.AllDone()) nav.Goto(result);
+        else nav.Goto(main);
+
     }
 }

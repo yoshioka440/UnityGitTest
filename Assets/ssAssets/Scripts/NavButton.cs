@@ -5,9 +5,20 @@ public class NavButton : MonoBehaviour
 {
     public GameObject to;
 
+    public void Goto(GameObject to)
+    {
+        var parent = transform.parent.gameObject;
+        while (parent.tag != "Screen") parent = parent.transform.parent.gameObject;
+
+        StartCoroutine(Transit(parent, to, parent.name == "Main"));
+    }
+
     public void Goto()
     {
-        StartCoroutine(Transit(gameObject.transform.parent.gameObject, to, false));
+        var parent = transform.parent.gameObject;
+        while(parent.tag != "Screen") parent = parent.transform.parent.gameObject;
+
+        StartCoroutine(Transit(parent, to, parent.name == "Main"));
     }
 
     public IEnumerator Transit(GameObject from, GameObject to, bool dir)

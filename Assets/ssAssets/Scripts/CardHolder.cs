@@ -7,7 +7,7 @@ public class CardHolder : MonoBehaviour {
 
     private int h = 210, w = 160;
 
-	void Start () {
+	void Awake () {
 	    int i = 0;
         foreach(var c in cards) {
 
