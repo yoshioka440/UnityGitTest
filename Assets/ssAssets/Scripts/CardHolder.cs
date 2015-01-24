@@ -5,22 +5,20 @@ public class CardHolder : MonoBehaviour {
 
     public GameObject[] cards;
 
-    private int h = 110, w = 60 + 100;
+    private int h = 210, w = 160;
 
 	void Start () {
 	    int i = 0;
         foreach(var c in cards) {
-            int hh = h;
-            if (i % 2 == 0) hh = -hh;
 
             RectTransform rt = c.GetComponent<RectTransform>();
-            rt.anchoredPosition = new Vector2(60 + i / 2 * w, hh);
+            rt.anchoredPosition = new Vector2((i % 3 - 1) * w, h + i / 3 * h);
 
             i++;
         }
         
         var r = GetComponent<UnityEngine.UI.ScrollRect>().content.sizeDelta;
-        r.x = 120 + (i - 1) / 2 * w;
+        r.y = (2 + (i - 1) / 3) * h;
         GetComponent<UnityEngine.UI.ScrollRect>().content.sizeDelta = r;
         
 	}
@@ -28,8 +26,4 @@ public class CardHolder : MonoBehaviour {
 	void Update () {
 	
 	}
-
-    public void addCard() { 
-    }
-
 }

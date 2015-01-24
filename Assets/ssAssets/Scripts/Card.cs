@@ -7,13 +7,6 @@ public class Card : MonoBehaviour {
     public Sprite image;
     public string description;
 
-    /*public bool disabled {
-        set {
-            GetComponent<UnityEngine.UI.Button>().enabled = value;
-        }
-    }*/
-
-
     public bool disabled_variable = true;
     public bool disabled {
         set {
@@ -57,6 +50,7 @@ public class Card : MonoBehaviour {
 	}
 
     public void OnClick() {
+        Debug.Log(name + " Clicked");
         disabled = !disabled_variable;
     }
 }
