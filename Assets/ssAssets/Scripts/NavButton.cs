@@ -3,29 +3,11 @@ using System.Collections;
 
 public class NavButton : MonoBehaviour
 {
+    public GameObject to;
 
-    public GameObject main;
-    public GameObject tasklist;
-
-    void Start()
+    public void Goto()
     {
-
-    }
-
-    void Update()
-    {
-
-    }
-
-
-    public void OnTasklist()
-    {
-        StartCoroutine(Transit(main, tasklist, true));
-    }
-
-    public void BackToMain(GameObject current)
-    {
-        StartCoroutine(Transit(current, main, false));
+        StartCoroutine(Transit(gameObject.transform.parent.gameObject, to, false));
     }
 
     public IEnumerator Transit(GameObject from, GameObject to, bool dir)
@@ -45,7 +27,7 @@ public class NavButton : MonoBehaviour
     var pos = fromRect.anchoredPosition;
     int frame = 15;
     for(int i = 0; i < frame; i++) {
-        pos.x = (dir?-w:w) * (1 - Mathf.Pow(1 - (float)i / frame, 2));
+        pos.x = (dir?-w:w) * Fomula.EaseIn((float)i / frame);
         Debug.Log("i: " + i + " : " + pos);
 
         fromRect.anchoredPosition = pos;
