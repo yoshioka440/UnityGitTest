@@ -20,14 +20,14 @@ public class Card : MonoBehaviour {
             disabled_variable = value;
             if (value)
             {
-             //   GetComponent<UnityEngine.UI.Button>().interactable = true;
-                GetComponent<Renderer>().SetAlpha(0.5f);
+                //   GetComponent<UnityEngine.UI.Button>().interactable = true;
+                GetComponent<CanvasRenderer>().SetAlpha(1f);
                 
             }
             else
             {
-              //  GetComponent<UnityEngine.UI.Button>().interactable = false;
-                GetComponent<Renderer>().SetAlpha(1f);
+                //  GetComponent<UnityEngine.UI.Button>().interactable = false;
+                GetComponent<CanvasRenderer>().SetAlpha(0.5f);
             }
             
         }

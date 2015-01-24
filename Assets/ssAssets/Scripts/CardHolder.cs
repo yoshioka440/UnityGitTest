@@ -5,7 +5,7 @@ public class CardHolder : MonoBehaviour {
 
     public GameObject[] cards;
 
-    private int h = 90, w = 60 + 50;
+    private int h = 110, w = 60 + 100;
 
 	void Start () {
 	    int i = 0;
