@@ -10,7 +10,7 @@ public class DashBoard : MonoBehaviour {
     RectTransform BarRect;
     RectTransform ParentRect;
 
-	void Start () {
+	void OnEnable () {
         BarRect = Bar.GetComponent<RectTransform>();
         ParentRect = Parent.GetComponent<RectTransform>();
 	}

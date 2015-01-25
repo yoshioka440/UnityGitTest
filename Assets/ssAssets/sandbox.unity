@@ -1328,6 +1328,10 @@ MonoBehaviour:
   - {fileID: 1590697321}
   - {fileID: 1121813317}
   - {fileID: 799351314}
+  - {fileID: 1607293678}
+  - {fileID: 74889587}
+  - {fileID: 1607727530}
+  - {fileID: 1291615830}
   tasks: 
 --- !u!4 &246962381
 Transform:
@@ -8715,7 +8719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49cc30b0a39c0b24c91f230c3a3767bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  to: {fileID: 0}
+  to: {fileID: 1263114543}
 --- !u!114 &1669236728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8756,11 +8760,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1669236727}
-        m_MethodName: BackToMain
-        m_Mode: 2
+        m_MethodName: Goto
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1097316154}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine, Version=0.0.0.0,
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0

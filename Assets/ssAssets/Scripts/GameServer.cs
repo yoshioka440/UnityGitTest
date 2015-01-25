@@ -10,19 +10,23 @@ public class GameServer : MonoBehaviour {
     public Card[] cards;
     public bool[] tasks;
 
-	void Start () {
+	void OnEnable () {
         instance = this;
 
-        tasks = new bool[cards.Length];
         int i = 0;
         foreach(var c in cards) {
             c.id = i++;
         }
 
+        ResetThem();
+	}
+
+    public void ResetThem()
+    {
+        tasks = new bool[cards.Length];
         remainingTurn = 40; // TODO
         startTurn = remainingTurn;
-
-	}
+    }
 
     public bool AllDone()
     {
