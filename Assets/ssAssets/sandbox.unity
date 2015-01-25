@@ -1708,7 +1708,7 @@ Prefab:
       objectReference: {fileID: 1821499251}
     - target: {fileID: 11415136, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: cost
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
@@ -4118,7 +4118,7 @@ MonoBehaviour:
   name: 
   image: {fileID: 0}
   description: 
-  cost: 2
+  cost: 1
   main: {fileID: 1263114543}
   result: {fileID: 1821499251}
   disabled_variable: 1
@@ -5804,7 +5804,7 @@ Prefab:
       objectReference: {fileID: 1821499251}
     - target: {fileID: 11415136, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: cost
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
@@ -6078,7 +6078,7 @@ MonoBehaviour:
   name: 
   image: {fileID: 0}
   description: 
-  cost: 2
+  cost: 1
   main: {fileID: 1263114543}
   result: {fileID: 1821499251}
   disabled_variable: 1
@@ -7886,7 +7886,7 @@ Prefab:
       objectReference: {fileID: 1821499251}
     - target: {fileID: 11415136, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: cost
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
@@ -8236,7 +8236,7 @@ Prefab:
       objectReference: {fileID: 1821499251}
     - target: {fileID: 11415136, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: cost
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
@@ -8354,7 +8354,7 @@ MonoBehaviour:
   name: 
   image: {fileID: 0}
   description: 
-  cost: 2
+  cost: 1
   main: {fileID: 1263114543}
   result: {fileID: 1821499251}
   disabled_variable: 1
@@ -8712,7 +8712,7 @@ MonoBehaviour:
   name: 
   image: {fileID: 0}
   description: 
-  cost: 2
+  cost: 1
   main: {fileID: 1263114543}
   result: {fileID: 1821499251}
   disabled_variable: 1
