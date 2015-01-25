@@ -31,14 +31,14 @@ public class MoveRoulette : MonoBehaviour {
         text.GetComponent<UnityEngine.UI.Text>().text = "" + value;
 
         yield return new WaitForSeconds(2);
-        GameServer.instance.remainingTurn -= value;
+        GameServer.instance.remainingTurn -= 1;
 
         var nav = roulette.GetComponent<NavButton>();
 
         if (main == null) Debug.LogError("Invalid name");
         if (result == null) Debug.LogError("Invalid name");
 
-        if (GameServer.instance.AllDone()) nav.Goto(result);
+        if (GameServer.instance.AllDone() || GameServer.instance.remainingTurn < 0) nav.Goto(result);
         else nav.Goto(main);
 
         yield return null;

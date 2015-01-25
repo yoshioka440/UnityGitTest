@@ -2231,7 +2231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &519540042
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4557,8 +4557,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 930503454}
-        m_MethodName: Goto
+      - m_Target: {fileID: 1821499255}
+        m_MethodName: OnBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6109,7 +6109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1263114544
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9509,6 +9509,7 @@ GameObject:
   - 224: {fileID: 1821499252}
   - 222: {fileID: 1821499254}
   - 114: {fileID: 1821499253}
+  - 114: {fileID: 1821499255}
   m_Layer: 5
   m_Name: Result
   m_TagString: Screen
@@ -9562,6 +9563,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1821499251}
+--- !u!114 &1821499255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821499251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b6c1cbb7051ea4998fd047496eb58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 522981948}
+  back: {fileID: 930503452}
 --- !u!1 &1837062738
 GameObject:
   m_ObjectHideFlags: 0

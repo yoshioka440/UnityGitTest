@@ -65,7 +65,7 @@ public class Card : MonoBehaviour {
         if (main == null) Debug.LogError("Invalid name");
         if (result == null) Debug.LogError("Invalid name");
 
-        if (GameServer.instance.AllDone()) nav.Goto(result);
+        if (GameServer.instance.AllDone() || GameServer.instance.remainingTurn < 0) nav.Goto(result);
         else nav.Goto(main);
 
     }

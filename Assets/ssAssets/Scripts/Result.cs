@@ -7,7 +7,8 @@ public class Result : MonoBehaviour {
     public GameObject back;
 
 	void OnEnable () {
-        text.GetComponent<UnityEngine.UI.Text>().text = "You left " + GameServer.instance.remainingTurn + " turns!";
+        if (GameServer.instance.remainingTurn < 0) text.GetComponent<UnityEngine.UI.Text>().text = "You are dead!";
+        else text.GetComponent<UnityEngine.UI.Text>().text = "You left " + GameServer.instance.remainingTurn + " turns!";
 	}
 
     public void OnBack()
