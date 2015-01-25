@@ -12,6 +12,17 @@ public class GameServer : MonoBehaviour {
     public Card[] cards;
     public bool[] tasks;
 
+    void Start()
+    {
+
+        GameObject.Find("Title").SetActive(true);
+        GameObject[] screens = GameObject.FindGameObjectsWithTag("screen");
+        foreach (var s in screens)
+        {
+            s.SetActive(false);
+        }
+    }
+
 	void OnEnable () {
         instance = this;
 
@@ -21,6 +32,7 @@ public class GameServer : MonoBehaviour {
         }
 
         ResetThem();
+
 	}
 
     public void ResetThem()
