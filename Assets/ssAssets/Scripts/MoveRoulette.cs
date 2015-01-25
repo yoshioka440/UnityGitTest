@@ -3,13 +3,13 @@ using System.Collections;
 
 public class MoveRoulette : MonoBehaviour {
     public GameObject text;
+    public GameObject roulette;
 
     bool decided;
 
     public GameObject main, result;
 
-	void Start () {
-        text = GameObject.Find("Text");
+	void OnEnable () {
         decided = false;
 	}
 	
@@ -33,7 +33,7 @@ public class MoveRoulette : MonoBehaviour {
         yield return new WaitForSeconds(2);
         GameServer.instance.remainingTurn -= value;
 
-        var nav = GetComponent<NavButton>();
+        var nav = roulette.GetComponent<NavButton>();
 
         if (main == null) Debug.LogError("Invalid name");
         if (result == null) Debug.LogError("Invalid name");

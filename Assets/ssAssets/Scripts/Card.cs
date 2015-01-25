@@ -46,7 +46,7 @@ public class Card : MonoBehaviour {
 
         links.name.GetComponent<UnityEngine.UI.Text>().text = name;
         links.image.GetComponent<UnityEngine.UI.Image>().sprite = image;
-        links.description.GetComponent<UnityEngine.UI.Text>().text = description;
+        links.description.GetComponent<UnityEngine.UI.Text>().text = cost + " : " + description;
 	}
 	
 	void Update () {

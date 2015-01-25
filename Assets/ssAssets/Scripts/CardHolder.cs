@@ -12,7 +12,7 @@ public class CardHolder : MonoBehaviour {
         foreach(var c in cards) {
 
             RectTransform rt = c.GetComponent<RectTransform>();
-            rt.anchoredPosition = new Vector2((i % 3 - 1) * w, h + i / 3 * h);
+            rt.anchoredPosition = new Vector2((i % 3 - 1) * w, - h - i / 3 * h);
 
             i++;
         }
