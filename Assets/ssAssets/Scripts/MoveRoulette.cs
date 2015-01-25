@@ -14,33 +14,43 @@ public class MoveRoulette : MonoBehaviour {
 	}
 	
 	void Update () {
-        if(!decided) text.GetComponent<UnityEngine.UI.Text>().text = "" + (int)(Random.value * 3 + 1);
+        if (!decided)
+        {
+            ;
+            text.GetComponent<UnityEngine.UI.Text>().text = "";
+
+            for (int i = 0; i < GameServer.instance.player; i++)
+            {
+                var value = (int)(Random.value * 3 + 1);
+                text.GetComponent<UnityEngine.UI.Text>().text += " " + value;
+            }
+        }
 	}
 
     public void OnClick()
     {
-        decided = true;
-        StartCoroutine(Roulette());
-    }
+        if (!decided)
+        {
+            decided = true;
+            
+            text.GetComponent<UnityEngine.UI.Text>().text = "";
 
-    IEnumerator Roulette()
-    {
-        var ev = GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem>();
-        ev.enabled = false;
-        var value = (int)(Random.value * 3 + 1);
-        text.GetComponent<UnityEngine.UI.Text>().text = "" + value;
+            for (int i = 0; i < GameServer.instance.player; i++)
+            {
+                var value = (int)(Random.value * 3 + 1);
+                text.GetComponent<UnityEngine.UI.Text>().text += " " + value;
+            }
+            GameServer.instance.remainingTurn -= 1;
+        }
+        else
+        {
+            var nav = roulette.GetComponent<NavButton>();
 
-        yield return new WaitForSeconds(2);
-        GameServer.instance.remainingTurn -= 1;
+            if (main == null) Debug.LogError("Invalid name");
+            if (result == null) Debug.LogError("Invalid name");
 
-        var nav = roulette.GetComponent<NavButton>();
-
-        if (main == null) Debug.LogError("Invalid name");
-        if (result == null) Debug.LogError("Invalid name");
-
-        if (GameServer.instance.AllDone() || GameServer.instance.remainingTurn < 0) nav.Goto(result);
-        else nav.Goto(main);
-
-        yield return null;
+            if (GameServer.instance.AllDone() || GameServer.instance.remainingTurn < 0) nav.Goto(result);
+            else nav.Goto(main);
+        }
     }
 }

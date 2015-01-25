@@ -7,7 +7,7 @@ public class NavButton : MonoBehaviour
 
     public void Goto(GameObject to)
     {
-        var parent = transform.parent.gameObject;
+        var parent = gameObject;
         while (parent.tag != "Screen") parent = parent.transform.parent.gameObject;
 
         StartCoroutine(Transit(parent, to, parent.name == "Main"));
@@ -15,7 +15,7 @@ public class NavButton : MonoBehaviour
 
     public void Goto()
     {
-        var parent = transform.parent.gameObject;
+        var parent = gameObject;
         while(parent.tag != "Screen") parent = parent.transform.parent.gameObject;
 
         StartCoroutine(Transit(parent, to, parent.name == "Main"));

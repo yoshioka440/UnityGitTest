@@ -4,6 +4,8 @@ using System.Collections;
 public class GameServer : MonoBehaviour {
     public static GameServer instance;
 
+    public int player;
+
     public int startTurn;
     public int remainingTurn = 0;
 
