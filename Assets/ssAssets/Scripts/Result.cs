@@ -8,8 +8,8 @@ public class Result : MonoBehaviour {
 
 	void OnEnable () {
         if (GameServer.instance.remainingTurn < 0) text.GetComponent<UnityEngine.UI.Text>().text = "You are dead!";
-        else text.GetComponent<UnityEngine.UI.Text>().text = "You left " + GameServer.instance.remainingTurn + " turns!\n" +
-            "and " + GameServer.instance.callCount + " calls!";
+        else text.GetComponent<UnityEngine.UI.Text>().text = "You finished with\n " + GameServer.instance.remainingTurn + " turn " +
+            "and\n " + GameServer.instance.callCount + " calls left!";
 	}
 
     public void OnBack()
