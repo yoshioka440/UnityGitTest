@@ -217,7 +217,7 @@ GameObject:
   - 114: {fileID: 74889586}
   - 114: {fileID: 74889585}
   m_Layer: 5
-  m_Name: Dirty Footprints
+  m_Name: Empty Foot Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -829,7 +829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: Unhinged Door
+      value: Tored Rug
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -1263,7 +1263,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: Dirty Footprints
+      value: Empty Foot Container
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -1692,7 +1692,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: Vomit
+      value: Dirty Footprints
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -4021,7 +4021,7 @@ GameObject:
   - 114: {fileID: 799351313}
   - 114: {fileID: 799351317}
   m_Layer: 5
-  m_Name: Vomit
+  m_Name: Dirty Footprints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5788,7 +5788,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: 'Spilled '
+      value: Spilled Popcorn
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -5981,7 +5981,7 @@ GameObject:
   - 114: {fileID: 1121813316}
   - 114: {fileID: 1121813320}
   m_Layer: 5
-  m_Name: Broken Chair
+  m_Name: Glittered Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6865,7 +6865,7 @@ GameObject:
   - 114: {fileID: 1291615829}
   - 114: {fileID: 1291615828}
   m_Layer: 5
-  m_Name: Spilled Potatochips
+  m_Name: Cigalette Butts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7420,7 +7420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: Spilled Potatochips
+      value: Cigalette Butts
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -7673,7 +7673,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: Broken Cartain
+      value: Tored Curtain
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -7907,7 +7907,7 @@ GameObject:
   - 114: {fileID: 1493805744}
   - 114: {fileID: 1493805748}
   m_Layer: 5
-  m_Name: Broken Cartain
+  m_Name: Tored Curtain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8220,7 +8220,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 169186, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: m_Name
-      value: Broken Chair
+      value: Glittered Bomb
       objectReference: {fileID: 0}
     - target: {fileID: 11437896, guid: b44d098a11be02447832f1ac16b118a5, type: 2}
       propertyPath: to
@@ -8615,7 +8615,7 @@ GameObject:
   - 114: {fileID: 1590697320}
   - 114: {fileID: 1590697324}
   m_Layer: 5
-  m_Name: 'Spilled '
+  m_Name: Spilled Popcorn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10608,7 +10608,7 @@ GameObject:
   - 114: {fileID: 1940701129}
   - 114: {fileID: 1940701133}
   m_Layer: 5
-  m_Name: Unhinged Door
+  m_Name: Tored Rug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
