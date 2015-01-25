@@ -14,13 +14,13 @@ public class GameServer : MonoBehaviour {
 
     void Start()
     {
-
+        /*
         GameObject.Find("Title").SetActive(true);
         GameObject[] screens = GameObject.FindGameObjectsWithTag("screen");
         foreach (var s in screens)
         {
             s.SetActive(false);
-        }
+        }*/
     }
 
 	void OnEnable () {

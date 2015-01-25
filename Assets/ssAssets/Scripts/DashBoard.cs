@@ -23,7 +23,7 @@ public class DashBoard : MonoBehaviour {
         ParentRect.anchoredPosition = pos;
 
 
-        text.GetComponent<UnityEngine.UI.Text>().text = " " + gs.remainingTurn + " turn\n to death";
+        text.GetComponent<UnityEngine.UI.Text>().text = "" + gs.remainingTurn;
     }
 
 }
